@@ -1,1 +1,1 @@
-# C-_Mathematical_Finance
+Notes from the book C++ for Financial Mathematics by John Armstrong
