@@ -37,10 +37,42 @@ void exercise2_5_1 () {
     std::cout << ((3 * 5 == 15) && ((7 * 8 == 21) || (true != false))) << std::endl;
 }
 
+void exercise2_5_4 () {
+    unsigned int a = 3;
+    unsigned int b = 5;
+    std::cout << (a - b);
+    // Output 4294967294
+}
+
+int exercise3_9_1 (int n) {
+    if (n <= 0) {
+        std::cout << "Please type a positive integer value.\n";
+        return 0;
+    }
+    if (n == 1){
+        return 1;
+    }
+
+    return n + exercise3_9_1(n - 1);
+
+}
+
+void exercise3_9_2 (int a, int b) {
+    std::cout << a << " ";
+    if (a > b) {
+        exercise3_9_2 (a - 1, b);
+    }
+    if (a < b) {
+        exercise3_9_2(a + 1, b);
+    }
+    }
+
 
 int main() {
 
-    std::cout << "Hello";
+    int a = 10;
+    int b = 5;
+    exercise3_9_2 (a, b);
 
 
     return 0;
